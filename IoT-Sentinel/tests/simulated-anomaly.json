@@ -1,0 +1,27 @@
+{
+  "project": "IoT Sentinel — C++ Supply-Chain Security Lab",
+  "anomaly_simulation_metadata": {
+    "experiment_configuration": "CONFIG_C",
+    "simulation_purpose": "Demonstrate detection of unapproved third-party library behavior in cloud ingestion pipeline",
+    "safety_guarantee": "Benign synthetic markers only. No real passwords, host files, or credentials collected."
+  },
+  "synthetic_anomalous_payload": {
+    "device_id": "esp32-sentinel-01",
+    "event": "simulated_anomaly",
+    "firmware_version": "1.1.0-research",
+    "uptime_seconds": 185,
+    "wifi_connected": true,
+    "wifi_rssi": -52,
+    "led_state": "ON",
+    "synthetic_anomaly_flag": true,
+    "synthetic_reason": "UNEXPECTED_DEPENDENCY_SIDE_EFFECT_ON_ACTUATION",
+    "synthetic_extra_metric": "RESEARCH_SIMULATION_UNAPPROVED_LIBRARY_BEHAVIOR"
+  },
+  "expected_detection_result": {
+    "detection_point": "Google Apps Script Ingestion & Drive Storage",
+    "flagged_status": true,
+    "assigned_filename_prefix": "ALERT_telemetry_",
+    "audit_classification": "SUPPLY_CHAIN_RESEARCH_ANOMALY",
+    "ui_action": "Security analyst or student observes unapproved event type and extra synthetic keys in Drive storage"
+  }
+}

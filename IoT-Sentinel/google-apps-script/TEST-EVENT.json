@@ -1,0 +1,10 @@
+{
+  "device_id": "esp32-sentinel-01",
+  "event": "test",
+  "firmware_version": "1.0.0",
+  "uptime_seconds": 45,
+  "wifi_connected": true,
+  "wifi_rssi": -58,
+  "led_state": "ON",
+  "token": "REPLACE_WITH_YOUR_DEVICE_TOKEN"
+}
